@@ -1,40 +1,40 @@
 {{!-- {{yield}} --}}
 <style>
-    table {
-        text-align: center;
-        width: 100%;
-    }
-    table tr td {
-        border: 1px solid #eee;
-    }
-    button {
-        border: none;
-        background-color: #fff;
-        height: 100px;
-        width: 100%;
-        font-weight: 200;
-        font-size: 38px;
-    }
+  table {
+    text-align: center;
+    width: 100%;
+  }
+  table tr td {
+    border: 1px solid #eee;
+  }
+  button {
+    border: none;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    font-weight: 200;
+    font-size: 38px;
+  }
 </style>
 <table border="0" cellspacing="0">
-    <tr>
-        <td><button {{action "one" this.post}}>1</button></td>
-        <td><button {{action "two" this.post}}>2</button></td>
-        <td><button {{action "three" this.post}}>3</button></td>
-    </tr>
-    <tr>
-        <td><button {{action "one" this.post}}>4</button></td>
-        <td><button {{action "two" this.post}}>5</button></td>
-        <td><button {{action "three" this.post}}>6</button></td>
-    </tr>
-    <tr>
-        <td><button {{action "one" this.post}}>7</button></td>
-        <td><button {{action "two" this.post}}>8</button></td>
-        <td><button {{action "three" this.post}}>9</button></td>
-    </tr>
-     <tr>
-        <td><button {{action "one" this.post}}>.</button></td>
-        <td><button {{action "two" this.post}}>0</button></td>
-        <td><button {{action "three" this.post}}>c</button></td>
-    </tr>
+  <tr>
+    <td><button {{action "one" this.post}}>1</button></td>
+    <td><button {{action "two" this.post}}>2</button></td>
+    <td><button {{action "three" this.post}}>3</button></td>
+  </tr>
+  <tr>
+    <td><button {{action "four" this.post}}>4</button></td>
+    <td><button {{action "five" this.post}}>5</button></td>
+    <td><button {{action "six" this.post}}>6</button></td>
+  </tr>
+  <tr>
+    <td><button {{action "seven" this.post}}>7</button></td>
+    <td><button {{action "eight" this.post}}>8</button></td>
+    <td><button {{action "nine" this.post}}>9</button></td>
+  </tr>
+  <tr>
+    <td><button {{action "decimal" this.post}}>.</button></td>
+    <td><button {{action "zero" this.post}}>0</button></td>
+    <td><button {{action "clear" this.post}}>c</button></td>
+  </tr>
 </table>
