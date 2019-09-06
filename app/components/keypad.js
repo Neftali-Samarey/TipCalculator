@@ -5,6 +5,8 @@ import Component from '@ember/component';
 let stringAccumulator;
 let accumulator = 0;
 let digitStack = [];
+let result = ""; // Final string for the joined strign
+let finalConversion = 0;
 
 export default Component.extend({
     actions: {
@@ -28,20 +30,37 @@ export default Component.extend({
             post = '5';
             digitStack.push(post);
         },
+        six(post) {
+            post = '6';
+            digitStack.push(post);
+        },
+        seven(post) {
+            post = '7';
+            digitStack.push(post);
+        },
+        eight(post) {
+            post = '8';
+            digitStack.push(post);
+        },
+        nine(post) {
+            post = '9';
+            digitStack.push(post);
+        },
+        decimal(post) {
+            post = '.';
+            digitStack.push(post);
+        },
         zero() {
-            // Call the stack count function
-           // alert("Count " + stackCount());
-         //  displayStackValues();
-           convertGlobalAccumulatorString();
-
-           // Call the join digits to finalize the joining
-        //    stringAccumulator = joinDigits();
-        //    accumulator =  convertStringToInt(stringAccumulator);
-        //    console.log("Final Result: " + accumulator);
+            post = '0';
+            digitStack.push(post);
+           //convertGlobalAccumulatorString();
+        },
+        clear() {
+            alert("Clearing the calculator");
         }
     }
 });
- let result; // Final string for the joined strign
+ 
 // Function to join the numbers together in the stack
 // This function only gets called whent he user is ready to compute the tip
 // Works as a final point where the current values being entered accumulate on a stack, and the user then uses that stack to
@@ -51,9 +70,7 @@ function joinDigits() {
     for (let i = 0; i < digitStack.length; i++) {
         result += digitStack[i];
     }
-
-      console.log("Joined Digits Results: " + result);
-  
+    console.log("Joined Digits Results: " + result);
 }
 
 function stackCount() {
@@ -75,8 +92,16 @@ function convertStringToInt(inputString) {
 
 function convertGlobalAccumulatorString() {
     // Take the global string accumulator, and convert it
-    joinDigits();
-    let convertedIntegers = convertStringToInt(result);
-    console.log("Joined Digis as string " + convertedIntegers); // Test cases to see where the string is 
-}
 
+    // Joined array of strings into a single entity
+    for (let i = 0; i < digitStack.length; i++) {
+        result = result + digitStack[i];
+    }
+   
+   finalConversion = convertStringToInt(result);
+
+    console.log(finalConversion); // For debug purposes
+//     let convertedIntegers = convertStringToInt(result);
+//     console.log("Joined Digis as string " + convertedIntegers); // Test cases to see where the string is 
+// }
+}
