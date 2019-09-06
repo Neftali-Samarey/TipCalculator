@@ -1,57 +1,41 @@
-# tip-calculator
+# EmberJS Tip Calculator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Author: Neftali Samarey
 
-## Prerequisites
+A Simple tip calcilator implemented using EmberJS and HTML/CSS. Minilaistic UI based of my iOS App (Tipie) currently available free for download in the apple app store. 
 
-You will need the following things properly installed on your computer.
+## Time spent
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+ * EmberJS Documentation lookup
 
-## Installation
 
-* `git clone <repository-url>` this repository
-* `cd tip-calculator`
-* `npm install`
+## User stories
 
-## Running / Development
+### Required
+ * [x] User can enter total bill amount
+ * [x] User can choose between at least three tip tiers (e.g. 15%, 18%, 20%) and see the total tip 
+ * [x] User can see the total with tip
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+### Optional
 
-### Code Generators
+ * [ ] Add custom CSS to the calculator inputs
+ * [ ] Add a light/dark color theme toggle on the page
+ * [ ] User can enter tax amount
+ * [ ] Page is optimized for the viewport/browser size (i.e. scales to mobile & desktop sizes)
+ * [ ] Remember the previous bill amount when the user re-opens the browser
+ * [ ] Use [locale specific](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat) currency and currency separators.
 
-Make use of the many generators for code, try `ember help generate` for more details
+### Extra
 
-### Running Tests
+ * Any extra features not mentioned?
+ 
 
-* `ember test`
-* `ember test --server`
+## GIF Walkthrough
 
-### Linting
+![Walkthrough GIF](path/to/gif.gif)
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
-### Building
+## Notes & shoutouts
 
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Tell us more about your journey here or resources used. e.g. "Spent some additional time researching and playing with color options via CSS, and looking at MDN to understand localStorage. Shoutout to Luke for helping me with that controller issue!"
