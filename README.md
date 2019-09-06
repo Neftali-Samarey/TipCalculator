@@ -2,7 +2,7 @@
 
 Author: Neftali Samarey
 
-A Simple tip calcilator implemented using EmberJS and HTML/CSS. Minilaistic UI based of my iOS App (Tipie) currently available free for download in the apple app store. 
+A Simple tip calculator app implemented using EmberJS and HTML/CSS. Minimalistic UI based off my iOS App (Tipie) currently available free for download in the apple app store. 
 
 ## Time spent
 
