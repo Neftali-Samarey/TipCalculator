@@ -14,9 +14,9 @@
 
 <div id="display">
     {{!-- {{#each @people as |person|}} --}}
-    <DigitDisplay @title="Due:" @dynamicValue={{this.model}}/>
-    <DigitDisplay id="nonEditable" @title="Tip:" />
-    <DigitDisplay id="nonEditable"  @title="Total:"/>
+    <DigitDisplay  @labelTitle="Amount due" @title="Due:" @dynamicValue={{this.model}}/>
+    <DigitDisplay @labelTitle="Tip generated" id="nonEditable" @title="Tip:" />
+    <DigitDisplay @labelTitle="Grand Total" id="nonEditable"  @title="Total:"/>
     <Keypad/>
     {{!-- {{/each}} --}}
 </div>
