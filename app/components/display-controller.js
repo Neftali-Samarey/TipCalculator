@@ -14,6 +14,3 @@ export default Component.extend({
 });
 
 
-function doNow() {
-    return 34.00;
-}

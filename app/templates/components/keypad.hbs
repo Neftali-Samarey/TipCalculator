@@ -10,7 +10,8 @@
   table tr td {
     border: 1px solid #eee;
   }
-  button {
+  
+  .keypad button {
     border: none;
     background-color: #fff;
     height: 100px;
@@ -32,16 +33,16 @@
 </style>
 
 <!-- Beginning of the main keyboard component --> 
-<table id="tip" border="0" cellspacing="0"> 
+<table class="desktopSetup mobileBackgroundColor" id="" border="0" cellspacing="0"> 
   <tr>
-    <td><button class="" {{action "fifteen" this.post}}>15%</button></td>
-    <td><button class="" {{action "eighteen" this.post}}>18%</button></td>
-    <td><button class="" {{action "twenty" this.post}}>20%</button></td>
-     <td><button class="desktopHide" {{action "twenty" this.post}}>N</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "fifteen" this.post}}>15%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "eighteen" this.post}}>18%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "twenty" this.post}}>20%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopHide mobileButton" {{action "twenty" this.post}}>n%</button></td>
   </tr>
 </table>
   
-<table class="desktopHide" border="0" cellspacing="0">
+<table class="keypad desktopHide" border="0" cellspacing="0">
   <tr>
     <td><button {{action "one" this.post}}>1</button></td>
     <td><button {{action "two" this.post}}>2</button></td>

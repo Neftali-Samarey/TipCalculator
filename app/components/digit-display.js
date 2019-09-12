@@ -5,9 +5,11 @@ import Component from '@ember/component';
  let defaultValue = 0;
 
 export default Component.extend({
-    model() {
-        return 34.0;
-    }
+    actions: {
+        dueValue(newValue) {
+          
+        }
+      }
 });
 
 

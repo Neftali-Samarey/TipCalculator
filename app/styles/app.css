@@ -8,17 +8,63 @@
   .mobileUI {
     width: 100%;
   }
+
+  /* Mobile button */
+  .mobileButton {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff1a49;
+
+    border: none;
+  }
+  .mobileBackgroundColor table tr td{
+    background-color: #ff1a49;
+  }
+  .mobileHideBorder table tr td {
+    display: none;
+  }
+  
 }
+
 
 /* For normal dekstops and laptops*/ 
 @media only screen  and (min-width : 1224px) {
     /* Styles */
   .desktopHide {
-      display: none!important;
+    display: none!important;
+  }
+  .desktopSetup {
+    padding: 50px;
+    background-color: #fff;
+  }
+  .noBorder{
+    border: none;
+  }
+  /* Table drill in*/
+  .desktopSetup table tr td {
+    display: none;
+  }
+
+  /* Button */
+  .desktopRound {
+    font-family: 'Lato', sans-serif;
+    color: #383838;
+    border: 1px solid #d9d9d9;
+    border-radius: 9px;
+    padding: 10px;
+    height: 60px;
+    font-size: 24px;
+    width: 80%;
+    background-color: #fff;
   }
 
 
   .desktopUI {
+    padding: 80px;
     width: 50%;
     text-align: center;
     margin-left: auto;

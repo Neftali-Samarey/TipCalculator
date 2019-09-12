@@ -13,7 +13,7 @@
 <div id="display">
     {{!-- {{#each @people as |person|}} --}}
     <DigitDisplay @title="Due:" @dynamicValue={{this.model}}/>
-    <DigitDisplay @title="Tip:"/>
-    <DigitDisplay @title="Total:"/>
+    <DigitDisplay id="nonEditable" @title="Tip:" />
+    <DigitDisplay id="nonEditable"  @title="Total:"/>
     {{!-- {{/each}} --}}
 </div>

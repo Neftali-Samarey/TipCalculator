@@ -1,6 +1,9 @@
 import Component from '@ember/component';
 
 
+let dueField = document.getElementById('due');
+
+
 // Main Accumulator for the total values
 let stringAccumulator;
 let accumulator = 0;
@@ -112,5 +115,6 @@ function convertGlobalAccumulatorString() {
 
 // Percentage calls
 function applyFifthteen() {
-    alert("Called")
+
+    alert("Obtained" + dueField);
 }
