@@ -13,6 +13,11 @@
 /* For normal dekstops and laptops*/ 
 @media only screen  and (min-width : 1224px) {
     /* Styles */
+  .desktopHide {
+      display: none!important;
+  }
+
+
   .desktopUI {
     width: 50%;
     text-align: center;
