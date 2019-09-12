@@ -3,18 +3,18 @@ import Component from '@ember/component';
 // This will tie in and display the digits
 // This value willl stay local to the controllelr for the display
  let defaultValue = 0;
+ let dueBoxValue = document.getElementById('dueField');
 
 export default Component.extend({
     actions: {
-        dueValue(newValue) {
-          
+        dueValue() {
+            var valueObtained = this.get('component').get('amount');
+            console.log(valueObtained);
         }
       }
 });
 
-
-
-function relayGivenValue(inputValues) {
+function relayGioutlvenValue(inputValues) {
     if (inputValues == null) {
         return 0.0;
     }

@@ -25,5 +25,10 @@ margin: 0;
 
 <div class="container">
     <p class="displayType">{{@title}}</p>
-    <p class="digitFormatting">{{@dynamicValue}}<span class="hide"><input id="due" class="desktopTextbox" type="text"  onblur={{action "dueValue"}}/></span></p> <!-- this.model -->
+    <p class="digitFormatting">{{@dynamicValue}}
+      <span class="hide">
+        {{input type="text" class="desktopTextbox" value=amount  placeholder="Due Now" }}
+        {{!-- <input id="dueField" value="dueLb" class="desktopTextbox" type="text" onblur={{action "userDidEnterTextinDueField"}} placeholder="0.00"/> --}}
+      </span>
+    </p> <!-- this.model -->  
 </div>

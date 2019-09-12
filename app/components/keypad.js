@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 
 
-let dueField = document.getElementById('due');
+var dueTextfield = document.getElementById('currenty_due');
 
 
 // Main Accumulator for the total values
@@ -12,6 +12,8 @@ let result = ""; // Final string for the joined strign
 let finalConversion = 0;
 
 export default Component.extend({
+
+    /* Actions sent from the mobile keypad  */
     actions: {
         one(post) {
             post = '1';
@@ -59,7 +61,7 @@ export default Component.extend({
            //convertGlobalAccumulatorString();
         },
         fifteen() {
-            applyFifthteen();
+           alert("Applying 15% on the total");
         },
         clear() {
             alert("Clearing the calculator");
@@ -116,5 +118,6 @@ function convertGlobalAccumulatorString() {
 // Percentage calls
 function applyFifthteen() {
 
-    alert("Obtained" + dueField);
+  //  var valueObtained = this.get('controller').get('amount');
+   // alert(dueTextfield);
 }

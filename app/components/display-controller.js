@@ -1,16 +1,13 @@
 import Component from '@ember/component';
 
-
-
+/* This controlle is responding to the changes being made from it's child components (etc buttons)*/
 export default Component.extend({
-
-
-   
-    // model() { 
-    //     // Look up on routing values to the display component
-    //     // Also FYI: https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html
-    //     return 100.00;
-    // }
+    actions: {
+        userDidEnterTextinDueField() {
+            // Parent here will update what it was given from the child component.
+            alert("Response obtained from the child component")
+        }
+    }
 });
 
 
