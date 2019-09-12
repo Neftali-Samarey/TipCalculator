@@ -11,8 +11,9 @@
     }
 </style>
 <div id="display">
-    <DigitDisplay/>
-    <DigitDisplay/>
-    <DigitDisplay/>
-
+    {{!-- {{#each @people as |person|}} --}}
+    <DigitDisplay @title="Due:" @dynamicValue={{this.model}}/>
+    <DigitDisplay @title="Tip:"/>
+    <DigitDisplay @title="Total:"/>
+    {{!-- {{/each}} --}}
 </div>

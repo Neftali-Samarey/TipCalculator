@@ -5,12 +5,9 @@ import Component from '@ember/component';
  let defaultValue = 0;
 
 export default Component.extend({
-
     model() {
-        let v = relayGivenValue(10);
-        return 0.0;
+        return 34.0;
     }
-    
 });
 
 

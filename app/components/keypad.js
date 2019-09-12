@@ -55,6 +55,9 @@ export default Component.extend({
             digitStack.push(post);
            //convertGlobalAccumulatorString();
         },
+        fifteen() {
+            applyFifthteen();
+        },
         clear() {
             alert("Clearing the calculator");
         }
@@ -104,4 +107,10 @@ function convertGlobalAccumulatorString() {
 //     let convertedIntegers = convertStringToInt(result);
 //     console.log("Joined Digis as string " + convertedIntegers); // Test cases to see where the string is 
 // }
+}
+
+
+// Percentage calls
+function applyFifthteen() {
+    alert("Called")
 }

@@ -5,26 +5,25 @@ padding: 0;
 margin: 0;
 }
 .container  {
-   display: flex;
+  display: flex;
 }
 .digitFormatting {
-    padding: 30px; 
-    border-top: 1px solid #d9d9d9;
-    width: inherit;
-    text-align: right;
-    width: 50%;
+  padding: 15px; 
+  border-top: 1px solid #d9d9d9;
+  width: inherit;
+  text-align: right;
+  width: 50%;
  }
 
  .displayType {
      
-    padding: 30px; 
-    width: 50%;
-    border-top: 1px solid #d9d9d9;
+  padding: 30px; 
+  width: 50%;
+  border-top: 1px solid #d9d9d9;
  }
-
 </style>
 
 <div class="container">
-    <p class="displayType">title</p>
-    <p class="digitFormatting">0.0</p>
+    <p class="displayType">{{@title}}</p>
+    <p class="digitFormatting">{{@dynamicValue}}<span class="hide"><input class="desktopTextbox" type="text" /></span></p> <!-- this.model -->
 </div>
