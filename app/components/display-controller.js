@@ -5,8 +5,9 @@ let billDueSample = 83.20;
 let tipAdjusted = 0.0;
 
 let total = 0.0;
+let generatedTip = 0; // This is the generated tip local var to be blubbled in
 
-/* This controlle is responding to the changes being made from it's child components (etc buttons)*/
+/* This controller is responding to the changes being made from it's child components (etc buttons)*/
 export default Component.extend({
     actions: {
         set15Percent() {
