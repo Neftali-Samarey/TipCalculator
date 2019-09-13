@@ -35,9 +35,9 @@
 <!-- Beginning of the main keyboard component --> 
 <table class="desktopSetup mobileBackgroundColor" id="" border="0" cellspacing="0"> 
   <tr>
-    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "fifteen"}}>15%</button></td>
-    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "eighteen" this.post}}>18%</button></td>
-    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "twenty" this.post}}>20%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "callParent15" bubbles=false}}>15%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "callParent18" bubbles=false}}>18%</button></td>
+    <td class="noBorder mobileHideBorder"><button class="desktopRound mobileButton" {{action "callParent20" bubbles=false}}>20%</button></td>
     <td class="noBorder mobileHideBorder"><button class="desktopHide mobileButton" {{action "twenty" this.post}}>n%</button></td>
   </tr>
 </table>

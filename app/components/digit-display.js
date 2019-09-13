@@ -8,8 +8,8 @@ import Component from '@ember/component';
 export default Component.extend({
     actions: {
         dueValue() {
-            var valueObtained = this.get('component').get('amount');
-            console.log(valueObtained);
+            var valueObtained = this.get('amount');
+            alert(valueObtained);
         }
       }
 });

@@ -60,9 +60,15 @@ export default Component.extend({
             digitStack.push(post);
            //convertGlobalAccumulatorString();
         },
-        fifteen() {
-           alert("Applying 15% on the total");
+        callParent15: function() {
+           this.sendAction("callChild1"); 
         },
+        callParent18: function() {
+           this.sendAction("callChild2"); 
+        },
+        callParent20: function() {
+            this.sendAction("callChild3"); 
+         },
         clear() {
             alert("Clearing the calculator");
         }
