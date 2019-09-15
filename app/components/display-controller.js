@@ -15,16 +15,22 @@ export default Component.extend({
             percentageValue = 0.15;
             let generatedTip = billDueSample * percentageValue;
             total = generatedTip + billDueSample;
-            document.getElementById("tipField").value = generatedTip;
-            alert("Due tip" +  generatedTip + " Grand total: " + total);
+           // alert("Due tip" +  generatedTip + " Grand total: " + total);
         }, 
         set18Percent() {
             percentageValue = 0.18;
             alert("Value:" +  percentageValue);
+
+            // Sample sedning a value to the main keybnoard
+            let t = document.getElementById('t2');
+            t.value = "Works";
         },
         set20Percent() {
             percentageValue = 0.20;
             alert("Value:" +  percentageValue);
+        },
+        computeTotal(value) {
+        alert("Total recieved: " + value); 
         },
         model() {
             return total;
