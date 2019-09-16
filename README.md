@@ -24,7 +24,7 @@ A Simple tip calculator app implemented using EmberJS and HTML/CSS. Minimalistic
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](../src/gif/tipiedesktop.gif)
+![Walkthrough GIF](app/src/gif/tipiedesktop.gif)
 
 GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
