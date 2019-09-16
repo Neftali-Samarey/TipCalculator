@@ -30,4 +30,5 @@ GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
 ## Notes & shoutouts
 
-Tell us more about your journey here or resources used. e.g. "Spent some additional time researching and playing with color options via CSS, and looking at MDN to understand localStorage. Shoutout to Luke for helping me with that controller issue!"
+Working on mimicking the entire app to mimick my app out in the appstore called "Tipie" which was written entirely in Swift. Feel free to download Tipie for free!
+[![button](app/src/apple/appstore.png)](https://apps.apple.com/us/app/tipie/id1454194057)
