@@ -89,6 +89,23 @@
   input:focus {
     outline:none;
 }
+
+.smallFont {
+  font-size: 20px;
+}
+.instruction {
+  padding: 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 11px;
+}
+.listType {
+
+  text-align: left;
+  color: #727272;
+  font-family: avenir;
+  font-weight: lighter;
+  list-style: circle;
+}
 }
         
 /* Large screens ----------- */

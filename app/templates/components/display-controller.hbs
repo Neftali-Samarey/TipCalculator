@@ -19,6 +19,12 @@
     <DigitDisplay @labelTitle="" @tipField="t2" id="nonEditable" @defaultValue="0.00"  @title="Total:"/>
     {{keypad callChild1=(action 'set15Percent') callChild2=(action 'set18Percent') callChild3=(action 'set20Percent')}}
     {{!-- <Keypad/> --}}
+    <div class="instruction">
+        <span class="smallFont listType">
+            <ul><li>To compute, enter your bill on 'Due' field and hit enter</li></ul>
+            <ul><li>Select your percentage in the buttons above</li></ul>
+        </span>
+    </div>
 
 
 

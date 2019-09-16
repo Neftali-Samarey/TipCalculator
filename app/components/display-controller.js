@@ -24,7 +24,7 @@ export default Component.extend({
     
                 localValue.setAttribute("style", "border: 1px solid red;");
                
-            } else if (localValue.value.length > 0) {
+            } else if (localValue.value.length >= 1) {
                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
                 // Take the value from the textfield and compute it.
                 dueNow = localValue.value; // Grabbign the value
@@ -34,8 +34,7 @@ export default Component.extend({
                 
 
                 tipToApply = dueNow * percentageValue;
-                
-                alert("Grand total: " + totalDueNow);
+            
                 document.getElementById('t1').value = tipToApply.toFixed(2); // Send the value to the tip field
                 document.getElementById('t2').value = totalDueNow; // Send the value to the total field.
 
@@ -52,7 +51,7 @@ export default Component.extend({
     
                 localValue.setAttribute("style", "border: 1px solid red;");
                
-            } else if (localValue.value.length > 0) {
+            } else if (localValue.value.length >= 1) {
                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
                 // Take the value from the textfield and compute it.
                 dueNow = localValue.value; // Grabbign the value
@@ -69,7 +68,7 @@ export default Component.extend({
     
                 localValue.setAttribute("style", "border: 1px solid red;");
               
-            } else if (localValue.value.length > 0) {
+            } else if (localValue.value.length >= 1) {
                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
                 // Take the value from the textfield and compute it.
                 dueNow = localValue.value; // Grabbign the value
