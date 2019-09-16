@@ -9,14 +9,14 @@
         font-size: 30px;
         
     }
-</style>
+</style> 
 
 
 <div id="display">
     {{!-- {{#each @people as |person|}} --}}
 
     <DigitDisplay @labelTitle="" @title="Due:" @dynamicValue={{this.amount}}/>
-    <DigitDisplay @labelTitle={{this.total}} id="tipField" @title="Tip:" />
+    <DigitDisplay @labelTitle={{this.getTotal}} id="tipField" @title="Tip:" />
     <DigitDisplay @labelTitle="" id="nonEditable"  @title="Total:"/>
     {{keypad callChild1=(action 'set15Percent') callChild2=(action 'set18Percent') callChild3=(action 'set20Percent')}}
     {{!-- <Keypad/> --}}

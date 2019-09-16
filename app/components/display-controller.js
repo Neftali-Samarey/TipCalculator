@@ -32,7 +32,8 @@ export default Component.extend({
 });
 
 function getTotal() {
-    return total;
+    let obj = this.get(total);
+    return obj;
 }
 
 
