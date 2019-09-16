@@ -1,22 +1,24 @@
 import Component from '@ember/component';
 
 // This will tie in and display the digits
+
 // This value willl stay local to the controllelr for the display
- let defaultValue = 0;
- let dueBoxValue = document.getElementById('dueField');
+ let totalDue = 0;
 
 export default Component.extend({
     actions: {
-        dueValue() {
-            var valueObtained = this.get('amount');
-            alert(valueObtained);
+        dueValue(got) {
+            totalDue = got;
+            sendToParent(totalDue);
+           // console.log(totalDue);
         }
       }
 });
 
-function relayGioutlvenValue(inputValues) {
-    if (inputValues == null) {
-        return 0.0;
-    }
-    return 1;
+let sendToParent = function(data) {
+    let tipField = document.getElementById('t1');
+    let totalField = document.getElementById('t2');
+    console.log("Sending this to the parent now with a value of " + data);
+    tipField.value = data;
+    // totalField.value = this.percentageValue;
 }

@@ -11,15 +11,21 @@
     }
 </style> 
 
-
+ 
 <div id="display">
-    {{!-- {{#each @people as |person|}} --}}
 
     <DigitDisplay @labelTitle="" @title="Due:" @dynamicValue={{this.amount}}/>
+<<<<<<< HEAD
     <DigitDisplay @labelTitle={{this.getTotal}} id="tipField" @title="Tip:" />
     <DigitDisplay @labelTitle="" id="nonEditable"  @title="Total:"/>
+=======
+    <DigitDisplay @labelTitle="" @tipField="t1" @defaultValue="0.00" @title="Tip:"/>
+    <DigitDisplay @labelTitle=""  @tipField="t2" id="nonEditable" @defaultValue="0.00"  @title="Total:"/>
+>>>>>>> 663144ad2360837e1439873116de0c78a64c053a
     {{keypad callChild1=(action 'set15Percent') callChild2=(action 'set18Percent') callChild3=(action 'set20Percent')}}
     {{!-- <Keypad/> --}}
-    {{!-- {{/each}} --}}
+
+
+
 </div>
 
