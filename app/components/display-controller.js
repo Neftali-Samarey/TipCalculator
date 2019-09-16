@@ -12,12 +12,19 @@ var dueNow = 0;
 var tipToApply = 0;
 var totalDueNow = 0;
 
+// Likely
+var newTotal = 0;
+var newTip = 0;
+var newDue = 0;
+
 /* This controller is responding to the changes being made from it's child components (etc buttons)*/
 export default Component.extend({
     actions: {
         set15Percent() {
 
-            let localValue = document.getElementById('t0'); // Obtain a reference to the 1st due field;
+           
+
+            let localValue = document.getElementById('t0');
             percentageValue = 0.15;
 
             if (localValue.value.length == 0) {
@@ -25,22 +32,19 @@ export default Component.extend({
                 localValue.setAttribute("style", "border: 1px solid red;");
                
             } else if (localValue.value.length >= 1) {
+
                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
-                // Take the value from the textfield and compute it.
-                dueNow = localValue.value; // Grabbign the value
-
-                // Logic
-                var totalTip = (dueNow * 0.15);
                 
+                // Taking the value from the textfield
+                newTotal = parseFloat(localValue.value);
+                newTip = parseFloat(newTotal * 0.15);
+                newDue = parseFloat(newTotal + newTip);
 
-                tipToApply = dueNow * percentageValue;
             
-                document.getElementById('t1').value = tipToApply.toFixed(2); // Send the value to the tip field
-                document.getElementById('t2').value = totalDueNow; // Send the value to the total field.
+                document.getElementById('t1').value = newTip.toFixed(2); // Send the value to the tip field
+                document.getElementById('t2').value = newDue.toFixed(2); // Send the value to the total field.
 
-                console.log("Total: " + dueNow);
-                console.log("Tip: " + tipToApply);
-                console.log("Final: " + (tipToApply + dueNow));
+
             }
             // End 
         }, 
@@ -52,13 +56,17 @@ export default Component.extend({
                 localValue.setAttribute("style", "border: 1px solid red;");
                
             } else if (localValue.value.length >= 1) {
-                localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
-                // Take the value from the textfield and compute it.
-                dueNow = localValue.value; // Grabbign the value
-                tipToApply = dueNow * percentageValue;
-                totalDueNow = dueNow + tipToApply;
-                document.getElementById('t1').value = tipToApply.toFixed(2); // Send the value to the tip field
-                document.getElementById('t2').value = totalDueNow; // Send the value to the total field.
+
+                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
+                
+                // Taking the value from the textfield
+                newTotal = parseFloat(localValue.value);
+                newTip = parseFloat(newTotal * 0.18);
+                newDue = parseFloat(newTotal + newTip);
+
+            
+                document.getElementById('t1').value = newTip.toFixed(2); // Send the value to the tip field
+                document.getElementById('t2').value = newDue.toFixed(2); // Send the value to the total field.
             }
         },
         set20Percent() {
@@ -70,12 +78,15 @@ export default Component.extend({
               
             } else if (localValue.value.length >= 1) {
                 localValue.setAttribute("style", "border: 1px solid #d9d9d9;")
-                // Take the value from the textfield and compute it.
-                dueNow = localValue.value; // Grabbign the value
-                tipToApply = dueNow * percentageValue;
-                totalDueNow = dueNow + tipToApply; // Parsing and covering decimal places
-                document.getElementById('t1').value = tipToApply.toFixed(2); // Send the value to the tip field
-                document.getElementById('t2').value = totalDueNow; // Send the value to the total field.
+                
+                // Taking the value from the textfield
+                newTotal = parseFloat(localValue.value);
+                newTip = parseFloat(newTotal * 0.20);
+                newDue = parseFloat(newTotal + newTip);
+
+            
+                document.getElementById('t1').value = newTip.toFixed(2); // Send the value to the tip field
+                document.getElementById('t2').value = newDue.toFixed(2); // Send the value to the total field.
             }
         },
         computeTotal(value) {
