@@ -11,6 +11,16 @@ let generatedTip = 0; // This is the generated tip local var to be blubbled in
 export default Component.extend({
     actions: {
         set15Percent() {
+
+            let localValue = document.getElementById('t0'); // Obtain a reference to the 1st due field;
+            if (localValue.value.length == 0) {
+                alert("Please enter a valid bill price.")
+                
+                // let c = localValue.value;
+                // console.log("Field has " + c);
+            } else {
+                
+            }
             // Parent here will update what it was given from the child component.
             percentageValue = 0.15;
             let generatedTip = billDueSample * percentageValue;
@@ -23,7 +33,7 @@ export default Component.extend({
 
             // Sample sedning a value to the main keybnoard
             let t = document.getElementById('t2');
-            t.value = "Works";
+            t.value = percentageValue * 23.99;
         },
         set20Percent() {
             percentageValue = 0.20;
