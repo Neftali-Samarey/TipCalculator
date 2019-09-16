@@ -31,4 +31,4 @@ GIF created with [LiceCap](https://www.cockos.com/licecap/).
 ## Notes & shoutouts
 
 Working on mimicking the entire app to mimick my app out in the appstore called "Tipie" which was written entirely in Swift. Feel free to download Tipie for free!
-[![button](app/src/apple/appstore.png)](https://apps.apple.com/us/app/tipie/id1454194057){:height="auto" width="100px"}
+[![button](app/src/apple/appstore_s.png)](https://apps.apple.com/us/app/tipie/id1454194057)
