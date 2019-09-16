@@ -19,6 +19,5 @@ let sendToParent = function(data) {
     let tipField = document.getElementById('t1');
     let totalField = document.getElementById('t2');
     console.log("Sending this to the parent now with a value of " + data);
-    tipField.value = data;
     // totalField.value = this.percentageValue;
 }

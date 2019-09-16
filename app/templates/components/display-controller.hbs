@@ -16,7 +16,7 @@
 
     <DigitDisplay @labelTitle="" @tipField="t0" @title="Due:" @dynamicValue={{this.amount}}/>
     <DigitDisplay @labelTitle="" @tipField="t1" @defaultValue="0.00" @title="Tip:"/>
-    <DigitDisplay @labelTitle=""  @tipField="t2" id="nonEditable" @defaultValue="0.00"  @title="Total:"/>
+    <DigitDisplay @labelTitle="" @tipField="t2" id="nonEditable" @defaultValue="0.00"  @title="Total:"/>
     {{keypad callChild1=(action 'set15Percent') callChild2=(action 'set18Percent') callChild3=(action 'set20Percent')}}
     {{!-- <Keypad/> --}}
 
