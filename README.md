@@ -6,7 +6,7 @@ A Simple tip calculator app implemented using EmberJS and HTML/CSS. Minimalistic
 
 ## Time spent
 
- * EmberJS Documentation lookup
+ * About a week here and there.
 
 
 ## User stories
@@ -16,23 +16,15 @@ A Simple tip calculator app implemented using EmberJS and HTML/CSS. Minimalistic
  * [x] User can choose between at least three tip tiers (e.g. 15%, 18%, 20%) and see the total tip 
  * [x] User can see the total with tip
 
-### Optional
-
- * [ ] Add custom CSS to the calculator inputs
- * [ ] Add a light/dark color theme toggle on the page
- * [ ] User can enter tax amount
- * [ ] Page is optimized for the viewport/browser size (i.e. scales to mobile & desktop sizes)
- * [ ] Remember the previous bill amount when the user re-opens the browser
- * [ ] Use [locale specific](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat) currency and currency separators.
 
 ### Extra
 
- * Any extra features not mentioned?
+ * Modern UI Design
  
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](path/to/gif.gif)
+![Walkthrough GIF](src/gif/tipiedesktop.gif)
 
 GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
